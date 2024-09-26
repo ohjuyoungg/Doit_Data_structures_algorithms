@@ -1,5 +1,7 @@
 package chap02;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class PhysicalExamination {
@@ -66,5 +68,7 @@ public class PhysicalExamination {
         System.out.println("\n시력 분포");
         for (int i = 0; i < VMAX; i++)
             System.out.printf("%3.1f～: %2d명\n", i / 10.0, vdist[i]);
+
+        Deque<String> deque = new LinkedList<>();
     }
 }
